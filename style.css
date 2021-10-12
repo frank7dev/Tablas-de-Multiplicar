@@ -1,0 +1,90 @@
+/* My Work Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Prompt", sans-serif;
+  color: #555;
+}
+
+.title {
+  padding-left: 1em;
+  font-weight: 200;
+  font-size: 3rem;
+}
+
+.container-tables {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  padding: 0 2rem 2rem;
+}
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+.table h1 {
+  width: 100%;
+  padding: 0.5rem 0;
+  margin: 0;
+
+  background-color: rgb(19, 50, 65);
+  color: white;
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.table ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  background-color: white;
+
+  text-align: center;
+}
+.table li {
+  padding: 0.2rem 0;
+  position: relative;
+}
+
+.par {
+  background-color: rgb(214, 255, 250);
+}
+.par::after {
+  content: "par";
+  position: absolute;
+  right: 10px;
+  top: 5.5px;
+
+  border: 1px solid DarkTurquoise;
+  color: DarkTurquoise;
+  padding: 0 0.2rem;
+  border-radius: 5px;
+  font-size: 0.7rem;
+}
+.impar {
+  background-color: rgb(255, 220, 213);
+}
+.impar::after {
+  content: "impar";
+  position: absolute;
+  right: 10px;
+  top: 5.5px;
+
+  border: 1px solid tomato;
+  color: tomato;
+  padding: 0 0.2rem;
+  border-radius: 5px;
+  font-size: 0.7rem;
+}
