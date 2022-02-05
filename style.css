@@ -9,6 +9,31 @@ body {
   color: #555;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.btn {
+  padding: .7rem 2rem;
+  cursor: pointer;
+  border: 3px solid rgb(19, 50, 65);
+  border-radius: 10px;
+  color: rgb(19, 50, 65);
+  background-color: rgb(214, 255, 250);
+  font: 1rem 'Prompt';
+  transition: background-color .3s, color .3s;
+  transition-timing-function: ease-out;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  color: rgb(214, 255, 250);
+  background-color: rgb(19, 50, 65);
+}
+
 .title {
   padding-left: 1em;
   font-weight: 200;
